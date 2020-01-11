@@ -1,1 +1,1 @@
-api・・・go言語で作成したWebAPIを置いています
+test.go・・・verionをjsonで返すapi
