@@ -60,14 +60,8 @@ func main() {
   } */
 
   ans = 0
-  for i := 1; i <= 2*n-1; i++ {
-    flags := make([]bool, 2*n)
-    index := check(flags)
-    flags[index] = true
-    flags[i] = true
-    // fmt.Println(index, i)
-    search(flags, comp[index][i-1-index])
-  }
+  flags := make([]bool, 2*n)
+  search(flags, 0)
 
   // output
   fmt.Println(ans)
