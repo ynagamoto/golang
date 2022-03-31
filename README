@@ -1,3 +1,4 @@
+# go言語で作ったものを置くリポジトリ
 - test.go
 -- verionをjsonで返すapi
 - access_log_app
