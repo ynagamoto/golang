@@ -1,4 +1,6 @@
-test.go・・・verionをjsonで返すapi
-access_log_app・・・研究室の入退出を記録するアプリのバックエンド
-                    ginの方が使われているみたいなので echo -> gin の予定
-ws_ren・・・ginとmelodyでwebsocket
+- test.go
+-- verionをjsonで返すapi
+- access_log_app
+-- 研究室の入退出を記録するアプリのためのテストコード
+- ws_ren
+-- ginとmelodyでwebsocket
