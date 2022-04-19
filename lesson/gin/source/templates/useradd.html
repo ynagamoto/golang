@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Add</title>
+  </head>
+  <body>
+    <h1>User Add</h1>
+    <form method="post" action="">
+      <table>
+        <tr>
+          <td>名前</td>
+          <td><input type="text" name="name"></td>
+        </tr><tr>
+          <td>パスワード</td>
+          <td><input type="password" name="passwd"></td>
+        </tr><tr>
+          <td><input type="submit" value="submit"></td>
+        </tr>
+      </table>
+    </form>
+    <h2>↓Database↓</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>名前</th>
+        <th>パスワード</th>
+      </tr>
+      {{ range .users }}
+      <tr>
+        <td>{{ .Id}}</td>
+        <td>{{ .Name }}</td>
+        <td>{{ .Passwd }}</td>
+      </tr>
+      {{ end }}
+    </table>
+  </body>
+</html>
